@@ -115,12 +115,12 @@ async function work(body) {
   // default config
   var repoConfig = {
     maxReviewers: 3,
-    numFilesToCheck: 5,
-    userBlacklist: [],
+    numFilesToCheck: 10,
+    userBlacklist: ['helpfulrobot'],
     userBlacklistForPR: [],
     userWhitelist: [],
     fileBlacklist: [],
-    requiredOrgs: [],
+    requiredOrgs: ['silverstripe'],
     findPotentialReviewers: true,
     actions: ['opened'],
     skipAlreadyAssignedPR: false,
